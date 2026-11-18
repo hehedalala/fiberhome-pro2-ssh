@@ -31,7 +31,7 @@
 ```mermaid
 graph LR
     A["Web 登录<br/>superadmin / F1ber$dm"] --> B["send_msg 短信接口<br/>content 双引号注入"]
-    B --> C["x\";COMMAND;echo \"<br/>→ ROOT RCE（带输出回显）"]
+    B --> C['x";COMMAND;echo "<br/>ROOT RCE（带输出回显）']
     C --> D["bind mount /etc/shadow<br/>设置 SSH 密码 root123"]
     C --> E["bind mount /root → /data<br/>配置 authorized_keys"]
     C --> F["启动 dropbear<br/>放行防火墙 22 端口"]
