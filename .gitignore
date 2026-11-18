@@ -1,0 +1,27 @@
+# 依赖与产物
+node_modules/
+*.log
+
+# 密钥（不要提交私钥！）
+router_key
+router_key.pub
+router_rsa_key*
+*_key
+*.pem
+
+# 会话临时文件
+cookies.txt
+netlog.json
+*.tmp
+index.html
+login.html
+login.js
+checkBrowser*
+util.js
+polyfill.min.js
+login_res.js
+platform-tools/
+
+# 系统
+.DS_Store
+Thumbs.db
